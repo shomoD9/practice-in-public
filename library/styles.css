@@ -1,0 +1,79 @@
+/* Dialog Modal Styles */
+dialog {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-width: 500px;
+}
+
+/* Form Group Container */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Form Labels */
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Form Input Fields and Select Dropdowns */
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Form Buttons Container */
+.form-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+/* General Button Styles */
+.form-buttons button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Submit Button - Green */
+.form-buttons button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Cancel Button - Red */
+.form-buttons button[type="button"] {
+    background-color: #f44336;
+    color: white;
+}
+
+/* Remove Book Button */
+.remove-btn {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Remove Button Hover Effect */
+.remove-btn:hover {
+    background-color: #d32f2f;
+}
+
+/* Book Card Container */
+.book {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+    position: relative;
+}

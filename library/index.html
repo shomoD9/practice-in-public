@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for character encoding and responsive viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <!-- Main heading -->
+    <h1>My Library</h1>
+    <!-- Container for dynamically displaying books -->
+    <div id="bookList"></div>
+
+    <!-- Button to trigger add book dialog -->
+    <button id="addBookButton">Add Book</button>
+
+    <!-- Modal dialog for adding new books -->
+    <dialog id="addBookDialog">
+        <!-- Book entry form -->
+        <form id="addBookForm">
+            <!-- Title input field -->
+            <div class="form-group">
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title" required>
+            </div>
+            <!-- Author input field -->
+            <div class="form-group">
+                <label for="author">Author:</label>
+                <input type="text" id="author" name="author" required>
+            </div>
+            <!-- Pages input field -->
+            <div class="form-group">
+                <label for="pages">Pages:</label>
+                <input type="number" id="pages" name="pages" required>
+            </div>
+            <!-- Read status dropdown -->
+            <div class="form-group">
+                <label for="read">Have you read it?</label>
+                <select id="read" name="read" required>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+            <!-- Form action buttons -->
+            <div class="form-buttons">
+                <button type="submit">Add Book</button>
+                <button type="button" id="cancelButton">Cancel</button>
+            </div>
+        </form>
+    </dialog>
+    <!-- Link to JavaScript file -->
+    <script src="./index.js"></script>
+</body>
+</html>
